@@ -79,13 +79,19 @@ span {
   margin-top: 2rem;
 }
 
+.msg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .error-msg {
   display: none;
   font-weight: 600;
   font-size: 0.7rem;
   font-style: italic;
   color: orangered;
-  margin-top: -10px;
+  text-align: center;
 }
 
 .mail-input {
@@ -93,6 +99,7 @@ span {
   border-radius: 25px;
   border: 1px solid var(--clr-Blue);
   font-size: 0.8rem;
+  margin-bottom: 3px;
 }
 
 .btn {
@@ -142,4 +149,26 @@ span {
   text-align: center;
   font-size: 0.7rem;
   color: var(--clr-Gray);
+}
+
+/* media quoery */
+
+@media screen and (min-width: 550px) {
+  main {
+    max-width: 650px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+
+  .mail-input {
+    padding: 0.7rem 10rem 0.7rem 1.5rem;
+  }
+
+  .btn {
+    width: 160px;
+  }
 }
