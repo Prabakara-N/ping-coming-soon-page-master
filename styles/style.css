@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-Blue: #4f7df3;
+  --clr-Pale-Blue: #c2d3ff;
+  --clr-Light-Red: #ff5263;
+  --clr-Gray: #969696;
+  --clr-Very-Dark-Blue: #151f29;
+  --box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25),
+    -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  background-color: var(--clr-white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  padding: 1rem;
+}
+
+.logo {
+  width: 70px;
+  height: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-weight: lighter;
+  color: var(--clr-Gray);
+  font-size: 1.5rem;
+  padding-top: 1.25rem;
+}
+
+span {
+  font-weight: bold;
+  color: #151f29;
+}
+
+.para {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.error-msg {
+  display: none;
+  font-weight: 600;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: orangered;
+  margin-top: -10px;
+}
+
+.mail-input {
+  padding: 0.65rem 4.5rem 0.65rem 1.5rem;
+  border-radius: 25px;
+  border: 1px solid var(--clr-Blue);
+  font-size: 0.8rem;
+}
+
+.btn {
+  width: 260px;
+  padding: 0.7rem 0 0.7rem 0;
+  border-radius: 25px;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: var(--clr-Blue);
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--clr-Pale-Blue);
+  color: var(--clr-Very-Dark-Blue);
+  transition: all 0.3s;
+}
+
+.img-container {
+  margin-bottom: 5rem;
+}
+
+.icon-container {
+  text-align: center;
+  padding-bottom: 1.15rem;
+}
+
+.icon {
+  border: 1px solid var(--clr-Pale-Blue);
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  color: var(--clr-Blue);
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  background-color: var(--clr-Blue);
+  color: white;
+  transition: all 0.3s;
+}
+
+.footer-para {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--clr-Gray);
+}
